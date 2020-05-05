@@ -1,0 +1,41 @@
+{
+	"name": "code-area/laraarea-validator",
+	"description": "Validations for laravel",
+	"keywords": ["laravel", "validator"],
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Codearea",
+			"email": "davitzeynalyan@laravel-helper.com",
+			"role": "Developer"
+		}
+	],
+	"require": {
+		"laravel/framework": "^5.4"
+	},
+	"require-dev": {
+		"mockery/mockery": "~1.0",
+		"phpunit/phpunit": "~6.0"
+
+	},
+	"extra": {
+		"laravel": {
+			"providers": [
+				"LaraAreaValidator\\Providers\\AreaValidatorServiceProvider"
+			]
+		}
+	},
+	"suggest": {
+		"code-area/laraarea-helpers": "Useful functions"
+	},
+	"autoload": {
+		"psr-4": {
+			"LaraAreaValidator\\": "src/"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"Tests\\": "tests/"
+		}
+	}
+}
